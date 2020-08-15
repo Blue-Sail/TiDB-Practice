@@ -93,8 +93,8 @@ mysql>
 ```
 http://127.0.0.1:2379/dashboard/
 ```
-
-<img src="Img/lesson 1-1.png" style="zoom:75%;" />
+![](https://github.com/Blue-Sail/TiDB-Practice/tree/master/Img/lesson 1-1.jpg)
+<img src="Img/lesson 1-1.jpg" style="zoom:75%;" />
 
 在日志查询页面可以设置查询范围与日志类型等参数，在右侧可以看到，启动节点状态，包含1个PD，1个TiDB，3个TiKV节点
 
