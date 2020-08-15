@@ -2,13 +2,10 @@
 
 ## 课程要求
 
-本地下载 TiDB，TiKV，PD 源代码，改写源码并编译部署以下环境：
-	● 1 TiDB
-	● 1 PD
-	● 3 TiKV
+本地下载 TiDB，TiKV，PD 源代码，改写源码并编译部署以下环境：<br>● 1 TiDB<br>● 1 PD<br>● 3 TiKV
+	
 
-改写后
-	● 使得 TiDB 启动事务时，会打一个 “hello transaction” 的日志
+改写后<br>● 使得 TiDB 启动事务时，会打一个 “hello transaction” 的日志
 
 
 
@@ -97,7 +94,7 @@ mysql>
 http://127.0.0.1:2379/dashboard/
 ```
 
-![](C:\Users\Nathan\Desktop\2020-08-15 091127.png)
+<img src="Img/lesson 1-1.png" style="zoom:75%;" />
 
 在日志查询页面可以设置查询范围与日志类型等参数，在右侧可以看到，启动节点状态，包含1个PD，1个TiDB，3个TiKV节点
 
@@ -136,7 +133,7 @@ Query OK, 0 rows affected (0.00 sec)
 2020-08-14 17:51:39 INFO TiDB 0.0.0.0 [session.go:2265] ["hello transaction"]
 ```
 
-<img src="C:\Users\Nathan\Desktop\2020-08-15 092409.png" style="zoom:75%;" />
+<img src="Img/lesson 1-2.png" style="zoom:75%;" />
 
 
 
