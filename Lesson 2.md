@@ -633,6 +633,29 @@ TPC-H测试，导入
 
 ```
 ./bin/go-tpc tpch run -H 192.168.31.104 -P 4000 -D tpch --sf 5
+[Summary] Q1: 0.00s
+[Summary] Q10: 0.00s
+[Summary] Q11: 0.00s
+[Summary] Q12: 0.00s
+[Summary] Q13: 0.00s
+[Summary] Q14: 0.00s
+[Summary] Q15: 0.61s
+[Summary] Q16: 0.00s
+[Summary] Q17: 0.00s
+[Summary] Q18: 0.00s
+[Summary] Q19: 0.00s
+[Summary] Q2: 0.01s
+[Summary] Q20: 0.00s
+[Summary] Q21: 0.00s
+[Summary] Q22: 0.00s
+[Summary] Q3: 0.00s
+[Summary] Q4: 0.00s
+[Summary] Q5: 0.00s
+[Summary] Q6: 0.00s
+[Summary] Q7: 0.00s
+[Summary] Q8: 0.01s
+[Summary] Q9: 0.00s
+
 ```
 
 ### 关键指标监控截图
