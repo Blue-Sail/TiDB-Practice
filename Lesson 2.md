@@ -1,12 +1,12 @@
 # Lesson 2
 
--[课程要求](#课程要求)<br>
--[项目实施](#项目实施)<br>
-&nbsp;-[集群部署](#集群部署)<br>
-&nbsp;-[sysbench 性能测试](#sysbench 性能测试)<br>
-&nbsp;-[go-ycsb 性能测试](#go-ycsb 性能测试)<br>
-&nbsp;-[go-tpc性能测试](#go-tpc性能测试)<br>
-&nbsp;-[关键指标监控截图](#关键指标监控截图)<br>
+[课程要求](#课程要求)<br>
+[项目实施](#项目实施)<br>
+&nbsp;&nbsp;[集群部署](#集群部署)<br>
+&nbsp;&nbsp;[sysbench性能测试](#sysbench性能测试)<br>
+&nbsp;&nbsp;[go-ycsb性能测试](#go-ycsb性能测试)<br>
+&nbsp;&nbsp;[go-tpc性能测试](#go-tpc性能测试)<br>
+&nbsp;&nbsp;[关键指标监控截图](#关键指标监控截图)<br>
 
 ## 课程要求
 
@@ -176,7 +176,7 @@ ID                    Role          Host            Ports        OS/Arch       S
 |  4   |  192.168.31.6  | 2核  |  2G  | 虚拟硬盘 | Ubuntu 20.04 |  PD  |
 |  4   |  192.168.31.6  | 2核  |  2G  | 虚拟硬盘 | Ubuntu 20.04 |  PD  |
 
-###  sysbench 性能测试
+###  sysbench性能测试
 
 安装sysbench
 
@@ -372,7 +372,7 @@ Threads fairness:
 
 ```
 
-### go-ycsb 性能测试
+### go-ycsb性能测试
 
 安装go-ycsb
 
