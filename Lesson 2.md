@@ -605,16 +605,16 @@ git clone https://github.com/pingcap/go-tpc.git
 make build
 ```
 
-go-tpc测试，因为硬盘容量问题，只导入100仓库
+go-tpc测试，因为硬盘容量问题，只导入10仓库
 
 ```shell
-./bin/go-tpc tpcc -H 192.168.31.104 -P 4000 -D tpcc --warehouses 100 prepare
+./bin/go-tpc tpcc -H 192.168.31.104 -P 4000 -D tpcc --warehouses 10 prepare
 ```
 
 运行测试
 
 ```shell
-./bin/go-tpc tpcc -H 192.168.31.104 -P 4000 -D tpcc --warehouses 100 run
+./bin/go-tpc tpcc -H 192.168.31.104 -P 4000 -D tpcc --warehouses 10 run
 ```
 
 TPC-H测试，导入
