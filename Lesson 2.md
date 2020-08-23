@@ -625,14 +625,14 @@ TPC-H测试，导入
 
 ### 关键指标监控截图
 TiDB QPS<br>
-<img src="Img/Lesson 2/tidb qps.png" style="zoom:75%;" />
+<img src="Img/Lesson 2/tidb qps.png" style="zoom:75%;" /><br>
 TiDB Duration<br>
-<img src="Img/Lesson 2/tidb duration.png" style="zoom:75%;" />
+<img src="Img/Lesson 2/tidb duration.png" style="zoom:75%;" /><br>
 TiKV Cluster CPU<br>
-<img src="Img/Lesson 2/tikv cluster cpu.png" style="zoom:75%;" />
+<img src="Img/Lesson 2/tikv cluster cpu.png" style="zoom:75%;" /><br>
 TiKV Cluster QPS<br>
-<img src="Img/Lesson 2/tikv cluster qps.png" style="zoom:75%;" />
+<img src="Img/Lesson 2/tikv cluster qps.png" style="zoom:75%;" /><br>
 grpc QPS<br>
-<img src="Img/Lesson 2/grpc qps.png" style="zoom:75%;" />
+<img src="Img/Lesson 2/grpc qps.png" style="zoom:75%;" /><br>
 grpc Duration<br>
-<img src="Img/Lesson 2/grpc duration.png" style="zoom:75%;" />
+<img src="Img/Lesson 2/grpc duration.png" style="zoom:75%;" /><br>
