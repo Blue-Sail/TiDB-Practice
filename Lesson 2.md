@@ -2,19 +2,19 @@
 
 [课程要求](#课程要求)<br>
 [项目实施](#项目实施)<br>
-- [集群部署](#集群部署)<br>
-- [go-ycsb性能测试](#go-ycsb性能测试)<br>
-- [go-tpc性能测试](#go-tpc性能测试)<br>
-- [关键指标监控截图](#关键指标监控截图)<br>
-
+- [集群部署](#集群部署)
+- [go-ycsb性能测试](#go-ycsb性能测试)
+- [go-tpc性能测试](#go-tpc性能测试)
+- [关键指标监控截图](#关键指标监控截图)
+[结论](#结论)
 ## 课程要求
 
 使用 sysbench、go-ycsb 和 go-tpc 分别对 TiDB 进行测试并且产出测试报告。测试报告需要包括以下内容：
 
-● 部署环境的机器配置（CPU、内存、磁盘规格型号），拓扑结构（TiDB、TiKV各部署于哪些节点）<br>
-● 调整过后的 TiDB 和 TiKV 配置<br>
-● 测试输出结果<br>
-● 关键指标的监控截图<br>
+- 部署环境的机器配置（CPU、内存、磁盘规格型号），拓扑结构（TiDB、TiKV各部署于哪些节点）<br>
+- 调整过后的 TiDB 和 TiKV 配置<br>
+- 测试输出结果<br>
+- 关键指标的监控截图<br>
 &nbsp;○ TiDB Query Summary 中的 qps 与 duration<br>
 &nbsp;○ TiKV Details 面板中 Cluster 中各 server 的 CPU 以及 QPS 指标<br>
 &nbsp;○ TiKV Details 面板中 grpc 的 qps 以及 duration<br>
@@ -641,3 +641,5 @@ grpc QPS<br>
 <img src="Img/Lesson 2/grpc qps.png" style="zoom:75%;" /><br>
 grpc Duration<br>
 <img src="Img/Lesson 2/grpc duration.png" style="zoom:75%;" /><br>
+
+## 结论
