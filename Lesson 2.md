@@ -615,18 +615,24 @@ go-tpc测试，因为硬盘容量问题，只导入10仓库
 
 ```shell
 ./bin/go-tpc tpcc -H 192.168.31.104 -P 4000 -D tpcc --warehouses 10 run
+[Summary] DELIVERY - Takes(s): 1089.7, Count: 1254, TPM: 69.0, Sum(ms): 155247, Avg(ms): 123, 90th(ms): 160, 99th(ms): 256, 99.9th(ms): 512
+[Summary] DELIVERY_ERR - Takes(s): 1089.7, Count: 1, TPM: 0.1, Sum(ms): 13, Avg(ms): 13, 90th(ms): 16, 99th(ms): 16, 99.9th(ms): 16
+[Summary] NEW_ORDER - Takes(s): 1091.0, Count: 14406, TPM: 792.2, Sum(ms): 526015, Avg(ms): 36, 90th(ms): 64, 99th(ms): 96, 99.9th(ms): 192
+[Summary] ORDER_STATUS - Takes(s): 1090.5, Count: 1301, TPM: 71.6, Sum(ms): 17096, Avg(ms): 13, 90th(ms): 20, 99th(ms): 48, 99.9th(ms): 64
+[Summary] PAYMENT - Takes(s): 1091.4, Count: 13768, TPM: 756.9, Sum(ms): 353604, Avg(ms): 25, 90th(ms): 40, 99th(ms): 64, 99.9th(ms): 96
+[Summary] STOCK_LEVEL - Takes(s): 1091.1, Count: 1236, TPM: 68.0, Sum(ms): 23067, Avg(ms): 18, 90th(ms): 32, 99th(ms): 192, 99.9th(ms): 512
 ```
 
 TPC-H测试，导入
 
 ```
-./bin/go-tpc tpch prepare -H 192.168.31.104 -P 4000 -D tpch --sf 50 --analyze
+./bin/go-tpc tpch prepare -H 192.168.31.104 -P 4000 -D tpch --sf 5 --analyze
 ```
 
 测试
 
 ```
-./bin/go-tpc tpch run -H 192.168.31.104 -P 4000 -D tpch --sf 50
+./bin/go-tpc tpch run -H 192.168.31.104 -P 4000 -D tpch --sf 5
 ```
 
 ### 关键指标监控截图
