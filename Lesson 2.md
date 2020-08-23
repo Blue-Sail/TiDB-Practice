@@ -5,7 +5,7 @@
 - [集群部署](#集群部署)
 - [go-ycsb性能测试](#go-ycsb性能测试)
 - [go-tpc性能测试](#go-tpc性能测试)
-- [关键指标监控截图](#关键指标监控截图)
+- [关键指标监控截图](#关键指标监控截图)<br>
 [结论](#结论)
 
 ## 课程要求
@@ -16,9 +16,9 @@
 - 调整过后的 TiDB 和 TiKV 配置<br>
 - 测试输出结果<br>
 - 关键指标的监控截图<br>
--- TiDB Query Summary 中的 qps 与 duration
--- TiKV Details 面板中 Cluster 中各 server 的 CPU 以及 QPS 指标
--- TiKV Details 面板中 grpc 的 qps 以及 duration
+-- TiDB Query Summary 中的 qps 与 duration<br>
+-- TiKV Details 面板中 Cluster 中各 server 的 CPU 以及 QPS 指标<br>
+-- TiKV Details 面板中 grpc 的 qps 以及 duration<br>
 输出：写出你对该配置与拓扑环境和 workload下 TiDB 集群负载的分析，提出你认为的 TiDB的性能的瓶颈所在（能提出大致在哪个模块即可）
 截止时间：下周二（8.25） 24:00:00（逾期提交不给分）
 
