@@ -623,3 +623,10 @@ TPC-H测试，导入
 ./bin/go-tpc tpch run -H 192.168.31.104 -P 4000 -D tpch --sf 50
 ```
 
+### 关键指标监控截图
+<img src="Img/Lesson 2/tidb qps.png" style="zoom:75%;" />
+<img src="Img/Lesson 2/tidb duration.png" style="zoom:75%;" />
+<img src="Img/Lesson 2/tikv cluster cpu.png" style="zoom:75%;" />
+<img src="Img/Lesson 2/tikv cluster qps.png" style="zoom:75%;" />
+<img src="Img/Lesson 2/grpc qps.png" style="zoom:75%;" />
+<img src="Img/Lesson 2/grpc duration.png" style="zoom:75%;" />
