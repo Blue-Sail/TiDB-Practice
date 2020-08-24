@@ -6,7 +6,8 @@
 - [go-ycsb性能测试](#go-ycsb性能测试)
 - [go-tpc性能测试](#go-tpc性能测试)
 - [关键指标监控截图](#关键指标监控截图)<br>
-- [优化](#优化)
+- [瓶颈分析](#瓶颈分析)<br>
+- [尝试优化](#尝试优化)<br>
 
 ## 课程要求
 
@@ -656,5 +657,17 @@ grpc QPS<br>
 <img src="Img/Lesson 2/grpc qps.png" style="zoom:75%;" /><br>
 grpc Duration<br>
 <img src="Img/Lesson 2/grpc duration.png" style="zoom:75%;" /><br>
-
-## 优化
+## 瓶颈分析
+  硬盘IO，三台虚拟机安装与同一硬盘，在数据同步时，硬盘占用率很高，导致性能下降。查看Profiling Detail文件，在数据导入时在TiDB Parser耗时较多，在数据查询时mallocgc模块耗时较多疑似是性能瓶颈。
+## 尝试优化
+增加tikv cache尝试获得一定的性能提升，将topology.yaml中storage.block-cache.capacity 取消注释设定为16g。重新运行tpch测试，可见性能获得了几倍的提升。
+```
+[Summary] Q1: 1.83s
+[Summary] Q2: 1.93s
+[Summary] Q3: 6.33s
+[Summary] Q4: 2.09s
+[Summary] Q5: 16.98s
+[Summary] Q6: 0.41s
+[Summary] Q7: 4.45s
+[Summary] Q8: 2.52s
+```
