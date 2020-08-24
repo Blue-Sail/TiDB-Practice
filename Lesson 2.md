@@ -6,7 +6,7 @@
 - [go-ycsb性能测试](#go-ycsb性能测试)
 - [go-tpc性能测试](#go-tpc性能测试)
 - [关键指标监控截图](#关键指标监控截图)<br>
-[结论](#结论)
+- [优化](#优化)
 
 ## 课程要求
 
@@ -626,36 +626,21 @@ go-tpc测试，因为硬盘容量问题，只导入10仓库
 TPC-H测试，导入
 
 ```
-./bin/go-tpc tpch prepare -H 192.168.31.104 -P 4000 -D tpch --sf 5 --analyze
+./bin/go-tpc tpch prepare -H 192.168.31.104 -P 4000 -D tpch --sf 1 --analyze
 ```
 
 测试
 
 ```
-./bin/go-tpc tpch run -H 192.168.31.104 -P 4000 -D tpch --sf 5
-[Summary] Q1: 0.00s
-[Summary] Q10: 0.00s
-[Summary] Q11: 0.00s
-[Summary] Q12: 0.00s
-[Summary] Q13: 0.00s
-[Summary] Q14: 0.00s
-[Summary] Q15: 0.61s
-[Summary] Q16: 0.00s
-[Summary] Q17: 0.00s
-[Summary] Q18: 0.00s
-[Summary] Q19: 0.00s
-[Summary] Q2: 0.01s
-[Summary] Q20: 0.00s
-[Summary] Q21: 0.00s
-[Summary] Q22: 0.00s
-[Summary] Q3: 0.00s
-[Summary] Q4: 0.00s
-[Summary] Q5: 0.00s
-[Summary] Q6: 0.00s
-[Summary] Q7: 0.00s
-[Summary] Q8: 0.01s
-[Summary] Q9: 0.00s
-
+./bin/go-tpc tpch run -H 192.168.31.104 -P 4000 -D tpch --sf 1
+[Summary] Q1: 13.51s
+[Summary] Q2: 3.38s
+[Summary] Q3: 7.71s
+[Summary] Q4: 3.91s
+[Summary] Q5: 16.48s
+[Summary] Q6: 4.99s
+[Summary] Q7: 7.21s
+[Summary] Q8: 3.71s
 ```
 
 ### 关键指标监控截图
@@ -672,4 +657,4 @@ grpc QPS<br>
 grpc Duration<br>
 <img src="Img/Lesson 2/grpc duration.png" style="zoom:75%;" /><br>
 
-## 结论
+## 优化
