@@ -18,3 +18,32 @@
 
 ## 测试
 运行sysbench测试，导入32个表，数据100000条，运行Point select 测试测试，获取TiDB的火焰图
+```
+SQL statistics:
+    queries performed:
+        read:                            5035877
+        write:                           0
+        other:                           0
+        total:                           5035877
+    transactions:                        5035877 (8376.15 per sec.)
+    queries:                             5035877 (8376.15 per sec.)
+    ignored errors:                      0      (0.00 per sec.)
+    reconnects:                          0      (0.00 per sec.)
+
+General statistics:
+    total time:                          601.2144s
+    total number of events:              5035877
+
+Latency (ms):
+         min:                                    0.36
+         avg:                                   30.51
+         max:                                  809.44
+         95th percentile:                       69.29
+         sum:                            153633736.59
+
+Threads fairness:
+    events (avg/stddev):           19671.3945/50.06
+    execution time (avg/stddev):   600.1318/0.18
+```
+<img src="Img/Lesson 3/pic1.png" style="zoom:75%;" /><br>
+
