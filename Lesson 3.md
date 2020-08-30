@@ -47,7 +47,7 @@ Threads fairness:
 ```
 火焰图
 <img src="Img/Lesson 3/img1.png" style="zoom:75%;" /><br>
-经过具体分析，考虑executor.(*ExecStmt).FinishExecuteStmt 和server.bufferedReadConn.Read存在瓶颈
+观察火焰图中的平台部分，这些部分都明显占用了CPU时间，可以看到其中，syscall占据了很大的份额，但是syscall为go语言package中的部分，不应包含在TiDB的优化考量之中。所以，仅观察TiDB中的function，考虑executor.(*ExecStmt).FinishExecuteStmt 和server.bufferedReadConn.Read存在性能瓶颈。
 
 <img src="Img/Lesson 3/img2.png" style="zoom:75%;" /><br>
 <img src="Img/Lesson 3/img3.png" style="zoom:75%;" /><br>
