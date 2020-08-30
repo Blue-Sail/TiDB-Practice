@@ -47,4 +47,5 @@ Threads fairness:
 ```
 火焰图
 <img src="Img/Lesson 3/img1.png" style="zoom:75%;" /><br>
-
+经过具体分析，考虑executor.(*ExecStmt).FinishExecuteStmt 和server.(*clientConn).flush存在瓶颈
+<img src="Img/Lesson 3/img4.png" style="zoom:75%;" /><br>
