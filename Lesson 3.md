@@ -51,3 +51,5 @@ Threads fairness:
 
 <img src="Img/Lesson 3/img2.png" style="zoom:75%;" /><br>
 <img src="Img/Lesson 3/img3.png" style="zoom:75%;" /><br>
+
+issue address https://github.com/pingcap/tidb/issues/19598#issue-688710577
