@@ -45,5 +45,6 @@ Threads fairness:
     events (avg/stddev):           19671.3945/50.06
     execution time (avg/stddev):   600.1318/0.18
 ```
-<img src="Img/Lesson 3/pic1.png" style="zoom:75%;" /><br>
+火焰图
+<img src="Img/Lesson 3/img1.png" style="zoom:75%;" /><br>
 
